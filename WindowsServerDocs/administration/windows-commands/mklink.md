@@ -31,11 +31,14 @@ mklink [[/d] | [/h] | [/j]] <Link> <Target>
 |Parameter|Description|
 |---------|-----------|
 |/d|Creates a directory symbolic link. By default, **mklink** creates a file symbolic link.|
-|/h|Creates a hard link instead of a symbolic link.|
+|/h|Creates a hard link to a file instead of a symbolic link, see [Remarks].(#Remarks)|
 |/j|Creates a Directory Junction.|
 |\<Link>|Specifies the name of the symbolic link that is being created.|
 |\<Target>|Specifies the path (relative or absolute) that the new symbolic link refers to.|
 |/?|Displays help at the command prompt.|
+
+## <a name="Remarks"></a>Remarks
+Hard links can only be created on files see <a href="//msdn.microsoft.com/en-us/library/aa365006%28VS.85%29.aspx">Hard Links and Junctions</a> for more information.
 
 ## <a name="BKMK_examples"></a>Examples
 
